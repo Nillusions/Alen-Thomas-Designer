@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alen Thomas - Designer Portfolio</title>
+  <meta name="description"
+    content="Alen Thomas - an inter-disciplinary designer who thinks brands and products should actually talk to each other." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@1,400&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="starfield-bg" aria-hidden="true"></div>
+  <svg id="mouse-trail" aria-hidden="true"></svg>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="top">
+    <a href="#top" class="nav__brand">Alen Thomas</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#labs">Thinking/ lab</a>
+      <a href="#about">A little more about me</a>
+      <a href="#contact">Contact</a>
+      <a href="Alen Thomas Resume APR 26.pdf" target="_blank">Resume</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero__photo">
+        <div class="hero__img" data-asset="hero.png" aria-label="Photo of Alen"></div>
+        <span class="tag tag--pill hero__tag">Hey, I am Alen</span>
+      </div>
+
+      <div class="hero__copy">
+        <p class="hero__quote">I'm not the kind of designer who looks at something and decides what to do with it.</p>
+        <p class="hero__quote">I pick it up. Turn it around. Look at it upside down. Watch other people look at it. Try
+          to break it. See how the pieces fall. Then rebuild it.<br />That's how I design.</p>
+        <p class="hero__statement">I'm an <strong>inter-disciplinary designer</strong> who thinks <strong>brands and
+            products</strong> should actually talk to each other.</p>
+
+        <ul class="hero__social">
+          <li><a href="https://www.linkedin.com/in/alen-thomas/" target="_blank">Linkedin</a></li>
+          <li><a href="https://medium.com/@alenthomas" target="_blank">Medium</a></li>
+          <li><a href="https://www.behance.net/alenthomas1" target="_blank">Behance</a></li>
+          <li><a href="https://nillusions.github.io/CreativeafterAI/" target="_blank">Creative after AI</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== SELECTED PROJECTS ===================== -->
+    <section class="section section--divider" id="work">
+      <h2 class="section__title">Selected Projects</h2>
+
+      <div class="projects-grid">
+        <a href="projects/mail-studio/project-mail-studio.html" class="project-card">
+          <div class="thumb" data-asset="project-mail-studio.png">
+            <span class="tag thumb__tag">Product</span>
+          </div>
+          <h3 class="project-card__title">Designing a modern workflow for Outlook email production</h3>
+          <p class="project-card__desc">Mail Studio is an internal workflow tool built to simplify the creation and
+            delivery of Outlook-compatible email templates and reusable email assets.</p>
+        </a>
+
+        <a href="projects/exeen/project-exeen.html" class="project-card">
+          <div class="thumb" data-asset="project-exeen.png">
+            <span class="tag thumb__tag">Brand</span>
+          </div>
+          <h3 class="project-card__title">Building a Service Design-Led Market Entry Strategy for Exeen</h3>
+          <p class="project-card__desc">We applied a service design-led approach to define the brand experience, rollout
+            strategy, and distribution plan, focusing on customer-centric and localized methods.</p>
+        </a>
+
+        <article class="project-card">
+          <div class="thumb" data-asset="project-tulips.png">
+            <span class="tag thumb__tag">Brand</span>
+          </div>
+          <h3 class="project-card__title">Designing a Digital Brand Strategy for a Post-COVID Retail Store</h3>
+          <p class="project-card__desc">Rebranding and repositioning a struggling retail store for digital channels,
+            with every decision driven by customer research.</p>
+        </article>
+      </div>
+
+      <div class="see-more-row">
+        <button type="button" class="see-more" id="seeMoreToggle" aria-expanded="false" aria-controls="moreProjects">
+          See more <span class="arrow">&nearr;</span>
+        </button>
+      </div>
+
+      <!-- Wide list items — revealed after clicking "See more" -->
+      <div class="more-projects" id="moreProjects" hidden>
+        <article class="project-row">
+          <div class="thumb thumb--wide" data-asset="project-ai-content.png">
+            <span class="tag thumb__tag">Systems</span>
+          </div>
+          <div class="project-row__body">
+            <h3 class="project-card__title">Designing an AI-Powered Content Production System for a B2B Marketing Agency
+            </h3>
+            <p class="project-card__desc">A self-initiated content system built to increase posting frequency and
+              quality
+              - combining a brand-trained AI agent, a node-based image pipeline, and a comic character campaign.</p>
+          </div>
+        </article>
+
+        <article class="project-row">
+          <div class="thumb thumb--wide" data-asset="project-pm.png">
+            <span class="tag thumb__tag">Upcoming</span>
+          </div>
+          <div class="project-row__body">
+            <h3 class="project-card__title project-card__title--muted">Rethinking Project Management for the Non-Linear
+              Creative Workflow</h3>
+            <p class="project-card__desc">A personal product design project exploring how freelancers actually manage
+              projects - built around creative chaos, not linear task lists.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== LABS ===================== -->
+    <section class="section section--divider" id="labs">
+      <h2 class="section__title">Labs, Experiments &amp; Thoughts</h2>
+      <p class="section__lead">Outside of work I am still a curious kid. I start pulling on a thread and suddenly it's
+        midnight and I don't know where the time went. This is where the experiments live - the tools built out of
+        frustration, the curricula built out of curiosity, the writing that happens when something won't leave my head.
+      </p>
+
+      <ul class="labs-list">
+        <li><a href="https://nillusions.github.io/CreativeafterAI/" target="_blank"
+            data-brief="A collection of practical, no-fluff modules designed for designers, art directors, copywriters, and creative thinkers who want to integrate AI into their workflow—without losing their creative edge."
+            data-cta="Explore Modules">Creative after AI <span class="arrow">&nearr;</span></a></li>
+        <li><a href="https://resume-copilot.base44.app/" target="_blank"
+            data-brief="An experimental application built to rewrite resumes for a high ATS score using custom-targeted job descriptions."
+            data-cta="Optimize Resume">Resume Copilot <span class="arrow">&nearr;</span></a></li>
+        <li><a href="https://two-lines-899279376786.asia-southeast1.run.app" target="_blank"
+            data-brief="An on-the-go note-taking tool built to easily capture and store quick notes and journal ideas directly into Notion."
+            data-cta="Open Note Taker">Two lines <span class="arrow">&nearr;</span></a></li>
+        <li><a href="https://glyde-899279376786.asia-southeast1.run.app" target="_blank"
+            data-brief="An experimental font builder built to test Google AI Studio, taking custom vectors to compile beautiful fonts."
+            data-cta="Build Fonts">Glyde <span class="arrow">&nearr;</span></a></li>
+        <li><a href="https://medium.com/@alenthomas" target="_blank"
+            data-brief="Articles and case studies I have written exploring UX/UI, branding systems, design methodologies, and tech workflows."
+            data-cta="Read Articles">Medium <span class="arrow">&nearr;</span></a></li>
+        <li><a href="https://www.behance.net/alenthomas1" target="_blank"
+            data-brief="Curated visual gallery showcasing multiple graphic design projects, vector art, UI mockups, and creative identities."
+            data-cta="View Portfolio">Behance <span class="arrow">&nearr;</span></a></li>
+      </ul>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section section--divider" id="experience">
+      <div class="section__head-row">
+        <h2 class="section__title">Experience</h2>
+        <div class="section__head-links">
+          <a href="Alen Thomas Resume APR 26.pdf" target="_blank">Download resume <span class="arrow">&nearr;</span></a>
+          <a href="#contact">Contact <span class="arrow">&nearr;</span></a>
+        </div>
+      </div>
+
+      <div class="experience">
+        <ol class="experience__list">
+          <li class="exp">
+            <div class="exp__role">
+              <h3>Senior Designer</h3>
+              <p>Markivis</p>
+            </div>
+            <span class="exp__date">2024 - present</span>
+          </li>
+          <li class="exp">
+            <div class="exp__role">
+              <h3>Builder and Evangelist</h3>
+              <p>Creative after AI</p>
+            </div>
+            <span class="exp__date">2026 - present</span>
+          </li>
+          <li class="exp">
+            <div class="exp__role">
+              <h3>Founding Designer</h3>
+              <p>Imai</p>
+            </div>
+            <span class="exp__date">2022 - 2024</span>
+          </li>
+          <li class="exp">
+            <div class="exp__role">
+              <h3>Senior Designer</h3>
+              <p>My Operator</p>
+            </div>
+            <span class="exp__date">2020 - 2022</span>
+          </li>
+          <li class="exp">
+            <div class="exp__role">
+              <h3>Freelance Designer</h3>
+              <p>Self Employed</p>
+            </div>
+            <span class="exp__date">2019 - 2021</span>
+          </li>
+        </ol>
+
+        <div class="experience__art" data-asset="experience-portrait.png" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ===================== BIG STATEMENT ===================== -->
+    <section class="statement-band">
+      <p class="big-statement">I didn't choose design. Design chose me, somewhere between a mechanical engineering
+        textbook and a movie I couldn't stop thinking about. <span class="statement-normal">Over the years, I've worked
+          across brand, product, strategy, and systems.</span> <span class="underline">Some projects changed businesses.
+          Some changed the way I think. A few changed both.</span></p>
+    </section>
+
+    <!-- ===================== LIFE OUTSIDE DESIGN ===================== -->
+    <section class="section" id="about">
+      <div class="life">
+        <div class="life__text">
+          <h2 class="section__title">Life Outside Design</h2>
+          <p>Outside the world of brands, pixels, and product flows, I'm just someone trying to make sense of life with
+            a mix of curiosity and humor. I love movies, not in a film-buff "I know every director" way, but in a "this
+            one frame just changed my entire worldview" way. I'm often exploring new places, hanging out with friends,
+            or getting lost in conversations that jump from philosophy to food to why the world works the way it does. I
+            read, I observe, I overthink. And I genuinely enjoy the small moments - a good coffee, a long walk, a
+            late-night giggle fit that makes everything feel lighter. Life outside design keeps me grounded, curious,
+            and human... which is probably why I'm good at the design part.</p>
+        </div>
+
+        <!-- Collage positioned exactly per Figma (container 574x521) -->
+        <div class="collage">
+          <div class="collage__item" data-asset="life-village.png" style="left:0%;top:6.14%;width:22.30%;height:18.43%">
+          </div>
+          <div class="collage__item" data-asset="life-art2.png"
+            style="left:23.00%;top:2.69%;width:16.03%;height:21.88%"></div>
+          <div class="collage__item" data-asset="life-window.png"
+            style="left:39.72%;top:2.30%;width:14.98%;height:22.07%"></div>
+          <div class="collage__item" data-asset="life-auto.png" style="left:55.40%;top:0%;width:16.20%;height:24.57%">
+          </div>
+          <div class="collage__item" data-asset="life-history.png"
+            style="left:0%;top:25.34%;width:14.98%;height:22.07%"></div>
+          <div class="collage__item" data-asset="life-crowd2.png"
+            style="left:15.68%;top:25.34%;width:14.98%;height:22.07%"></div>
+          <div class="collage__item" data-asset="life-crowd.png" style="left:0%;top:48.18%;width:14.98%;height:14.01%">
+          </div>
+          <div class="collage__item" data-asset="life-mirror.png"
+            style="left:15.68%;top:48.18%;width:14.98%;height:22.07%"></div>
+          <div class="collage__item" data-asset="life-friends.png"
+            style="left:10.10%;top:71.02%;width:20.73%;height:18.43%"></div>
+          <div class="collage__item" data-asset="life-me.png" style="left:31.88%;top:25.34%;width:36.59%;height:53.74%">
+          </div>
+          <div class="collage__item" data-asset="life-glitch.png"
+            style="left:31.88%;top:79.85%;width:18.82%;height:20.15%"></div>
+          <div class="collage__item" data-asset="life-imai.png"
+            style="left:51.22%;top:79.85%;width:17.07%;height:19.00%"></div>
+          <div class="collage__item" data-asset="life-art3.png"
+            style="left:69.51%;top:25.34%;width:30.49%;height:44.15%"></div>
+          <div class="collage__item" data-asset="life-ideas.png"
+            style="left:69.51%;top:70.44%;width:18.82%;height:20.73%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+      <h2 class="contact__title">Project? Idea? Design talk? I'm here for it all, Drop me a message.</h2>
+      <div class="contact__actions">
+        <a href="mailto:alenthomas028@gmail.com" target="_blank">Say hello <span class="arrow">&nearr;</span></a>
+        <a href="https://www.linkedin.com/in/alen-thomas/" target="_blank">LinkedIn <span
+            class="arrow">&nearr;</span></a>
+        <a href="https://nillusions.github.io/CreativeafterAI/" target="_blank">Creative after AI <span
+            class="arrow">&nearr;</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" data-asset="footer-banner.png">
+    <p class="footer__note">made in 2026 With An Unparalleled Urge To Seek Ideas!</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
