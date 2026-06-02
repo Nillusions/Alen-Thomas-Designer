@@ -85,7 +85,8 @@
     (function tryNext(index) {
       if (index >= candidates.length) return;
 
-      var url = ASSET_DIR + candidates[index];
+      var fileUrl = candidates[index];
+      var url = (fileUrl.indexOf("../") !== -1) ? fileUrl : ASSET_DIR + fileUrl;
       var probe = new Image();
 
       probe.onload = function () {
