@@ -489,6 +489,55 @@ img {
   transform: translate(3px, -3px);
 }
 
+/* ---- What I do ---- */
+.what-i-do__grid {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.what-i-do__card {
+  border-top: 1px solid var(--line);
+  padding: 36px 40px 36px 0;
+  transition: color 180ms ease;
+}
+
+.what-i-do__card + .what-i-do__card {
+  padding-left: 40px;
+}
+
+.what-i-do__number {
+  color: var(--muted);
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.425;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+}
+
+.what-i-do__heading {
+  color: var(--olive);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  transition: color 180ms ease;
+}
+
+.what-i-do__body {
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.425;
+  max-width: 36ch;
+}
+
+.what-i-do__card:hover .what-i-do__heading {
+  color: #4f6100;
+}
+
+
 .experience {
   align-items: end;
   display: grid;
@@ -776,8 +825,13 @@ img {
 
   .projects-grid,
   .experience,
-  .life {
+  .life,
+  .what-i-do__grid {
     grid-template-columns: 1fr;
+  }
+
+  .what-i-do__card + .what-i-do__card {
+    padding-left: 0;
   }
 
   .project-row {
