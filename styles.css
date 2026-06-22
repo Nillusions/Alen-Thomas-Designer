@@ -497,7 +497,6 @@ img {
 }
 
 .what-i-do__card {
-  border-top: 1px solid var(--line);
   padding: 36px 40px 36px 0;
   transition: color 180ms ease;
 }
